@@ -1,6 +1,6 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
-include 'pry'
+require 'pry'
 
 class InteractiveRecord
   def initialize(options={})
