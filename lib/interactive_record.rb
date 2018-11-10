@@ -16,7 +16,7 @@ class InteractiveRecord
     DB[:conn].results_as_hash = true
 
     sql = "PRAGMA table_info('#{self.table_name}')"
-
+    #binding.pry
     table_info = DB[:conn].execute(sql)
     column_names = []
 
