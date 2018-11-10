@@ -25,6 +25,5 @@ class InteractiveRecord
     end
 
     column_names.compact
-    binding.pry
   end
 end
