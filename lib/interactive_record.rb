@@ -4,7 +4,7 @@ require 'active_support/inflector'
 class InteractiveRecord
   def initialize(options={})
     options.each do |property, value|
-      self.send("#{property} =", value)
+      self.send("#{property}=", value)
     end
   end
 
@@ -25,11 +25,5 @@ class InteractiveRecord
     end
 
     column_names.compact
-
-    self.column_names.each do |col_name|
-      attr_accessor col_name.to_sym
-    end
   end
-
-
 end
